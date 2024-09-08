@@ -1,0 +1,323 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="User_user" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 0;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .style100
+        {
+            color: #FFFFFF;
+        }
+        .style101
+        {
+            background-color: #003366;
+            height: 30px;
+        }
+        .style115
+        {
+            height: 199px;
+        }
+        .style140
+        {
+            height: 24px;
+        }
+        .style141
+        {
+            height: 37px;
+        }
+        .style143
+        {
+            color: #FFFFFF;
+            background-color: #003366;
+            height: 30px;
+        }
+        .style5
+        {
+            width: 100%;
+        }
+        .style7
+        {
+            color: #000000;
+            width: 528px;
+            background-color: #000000;
+            text-align: justify;
+        }
+        .style11
+        {
+            color: #FFFFFF;
+        }
+        .style9
+        {
+            font-size: medium;
+        }
+        .style8
+        {
+            color: #FFFFFF;
+            width: 139px;
+            font-size: large;
+            text-align: center;
+            background-color: #000000;
+        }
+        .style12
+        {
+            font-family: "Times New Roman", Times, serif;
+            text-align: left;
+            color: #FF3300;
+        }
+        .style6
+        {
+            color: #000000;
+            font-size: large;
+            text-align: justify;
+            background-color: #000000;
+        }
+        .style10
+        {
+            font-family: "Times New Roman", Times, serif;
+            text-align: left;
+        }
+        .style13
+        {
+            color: #FF3300;
+        }
+        .style21
+        {
+            text-align: left;
+            font-size: medium;
+        }
+        .style3
+        {
+            text-align: left;
+        }
+        </style>
+</head>
+<body style="height: 270px">
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="5" cellspacing="0" class="style1" 
+            style="border: thin solid #000000" width="100%">
+            <tr>
+                <td align="left" 
+                    style="font-weight: 700; " class="style143" colspan="2">
+                    &nbsp;<asp:Image ID="Image12" runat="server" Height="20px" 
+                        ImageUrl="~/Images/mail icon.jpg" />
+                    &nbsp;opportunitiestoyou@gmail.com</td>
+                <td align="right" class="style101">
+                    <asp:ImageButton ID="ImageButton1" runat="server" 
+                        ImageUrl="~/Images/Imagesforproject/Facebook_LogoRound.png" 
+                        PostBackUrl="~/User/contactus.aspx" style="margin-left: 0px" Width="25px" />
+                    <span 
+                        class="style100">&nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton2" runat="server" 
+                        ImageUrl="~/Images/whatsapp-logo-png-hd-2.png" 
+                        PostBackUrl="~/User/contactus.aspx" Width="25px" />
+                    &nbsp;&nbsp;
+                    <asp:ImageButton ID="ImageButton3" runat="server" ImageUrl="~/Images/twit.jpg" 
+                        PostBackUrl="~/User/contactus.aspx" style="margin-left: 0px" Width="25px" />
+                    </span></td>
+            </tr>
+            <tr>
+                <td align="left">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button 
+                        ID="Button1" runat="server" AccessKey="a" BackColor="White" BorderStyle="None" 
+                        ForeColor="White" PostBackUrl="~/Admin/login.aspx" Text="a" />
+                    &nbsp;
+                    <asp:Image ID="Image11" runat="server" Height="46px" 
+                        ImageUrl="~/Images/joblogo3.png" style="margin-left: 0px" Width="102px" />
+                </td>
+                <td align="left">
+                    <strong style="font-size: xx-large">&nbsp; Youngsters Hub&nbsp; </strong>
+                </td>
+                <td>
+                    <table align="right" cellpadding="3" cellspacing="0" 
+                        style="width: 800px; margin-left: 0px; font-weight: 700;">
+                        <tr>
+                            <td align="center">
+                                <asp:Image ID="Image1" runat="server" Height="25px" 
+                                    ImageUrl="~/Images/Imagesforproject/home.jpg" Width="30px" />
+                            </td>
+                            <td align="center">
+                                <asp:Image ID="Image2" runat="server" Height="25px" 
+                                    ImageUrl="~/Images/Imagesforproject/aboutus.jpg" Width="20px" />
+                            </td>
+                            <td align="center">
+                                <asp:Image ID="Image4" runat="server" Height="25px" 
+                                    ImageUrl="~/Images/Imagesforproject/feedbckfinal.jpg" />
+                            </td>
+                            <td align="center" height="20px">
+                                <asp:Image ID="Image14" runat="server" Height="24px" 
+                                    ImageUrl="~/Images/Imagesforproject/contactus.png" />
+                            </td>
+                            <td align="center">
+                                <img alt="" src="../Images/services1.png" height="25px" style="width: 27px" /></td>
+                            <td align="center">
+                                <asp:Image ID="Image15" runat="server" Height="24px" 
+                                    ImageUrl="~/Images/Imagesforproject/sitemap.png" Width="38px" />
+                            </td>
+                            <td align="center">
+                                <img alt="" src="../Images/Imagesforproject/login.jpg" height="25px" /></td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/User/home.aspx" 
+                                    ForeColor="Black">Home</asp:HyperLink>
+                            </td>
+                            <td align="center">
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/User/aboutus.aspx" 
+                                    style="color: #000066" ForeColor="Black">About Us</asp:HyperLink>
+                            </td>
+                            <td align="center">
+                                <asp:HyperLink ID="HyperLink14" runat="server" 
+                                    NavigateUrl="~/User/feedback.aspx" style="color: #000066" 
+                                    ForeColor="Black">Feedback</asp:HyperLink>
+                            </td>
+                            <td align="center">
+                                <asp:HyperLink ID="HyperLink5" runat="server" 
+                                    NavigateUrl="~/User/contactus.aspx" style="color: #000066" 
+                                    ForeColor="Black">Contact Us</asp:HyperLink>
+                            </td>
+                            <td align="center">
+                                <asp:HyperLink ID="HyperLink6" runat="server" 
+                                    NavigateUrl="~/User/services.aspx" ForeColor="Black">Services</asp:HyperLink>
+                            </td>
+                            <td align="center" class="style140">
+                                <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/User/sitemap.aspx" 
+                                    ForeColor="Black">Site Map</asp:HyperLink>
+                            </td>
+                            <td align="center" class="style140">
+                                <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/User/login.aspx" 
+                                    style="color: #000066" ForeColor="Black">Login</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+             <tr>
+                <td colspan="3" class="style141">
+                    <asp:Menu ID="Menu1" runat="server" BackColor="Silver" Height="27px" 
+                        onmenuitemclick="Menu1_MenuItemClick1" Orientation="Horizontal" 
+                        RenderingMode="Table" StaticSubMenuIndent="16px" Width="100%" 
+                        ForeColor="White" 
+                        style="text-align: center; font-weight: 700; background-color: #CC3300">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/User/all Jobs.aspx" Text="All jobs" 
+                                Value="All jobs"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/job by category.aspx" Text="Job By Category" 
+                                Value="Job By Category"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/job by location.aspx" Text="Job By Location" 
+                                Value="Job By Location"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/job by designation.aspx" 
+                                Text="Job By Designation" Value="Job By Designation"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/User/job by company.aspx" Text="Job By Company" 
+                                Value="Job By Company"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                   </td>
+
+                   </tr>
+            <tr>
+                <td  colspan="3">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" class="style115" colspan="3" bgcolor="Black">
+                    <table cellpadding="10" cellspacing="0" class="style5">
+                        <tr>
+                            <td class="style7" 
+                                style="border-right-style: groove; border-right-width: medium; border-right-color: #C0C0C0">
+                                &nbsp;&nbsp;
+                                <asp:Image ID="Image21" runat="server" Height="67px" 
+                                    ImageUrl="~/Images/Job portal image.png" Width="225px" />
+                                <br />
+                                <span class="style11">
+                                <br />
+                                <span class="style9">YOUNGSTERS HUB is a unique tech-driven platform that aims 
+                                to revolutionize the way hiring is done. Whether you are a job-seeker or an 
+                                employer, we help you secure the best of job opportunities and talent. Our 
+                                unique ranking algorithms helps candidates get noticed by recruiters on one hand 
+                                while helping recruiters notice the right candidates on the other.</span></span></td>
+                            <td class="style8" 
+                                style="border-right-color: #C0C0C0; border-right-width: medium; border-right-style: groove">
+                                <strong dir="ltr"><span class="style12">Quick Links<br />
+                                <br />
+                                <asp:HyperLink ID="hlabout1" runat="server" CssClass="style9" 
+                                    Font-Underline="True" ForeColor="White" NavigateUrl="~/User/aboutus.aspx">About</asp:HyperLink>
+                                <br />
+                                <br />
+                                <asp:HyperLink ID="hlservices1" runat="server" CssClass="style18" 
+                                    ForeColor="White" NavigateUrl="~/User/services.aspx">Services</asp:HyperLink>
+                                <br />
+                                <br />
+                                <asp:HyperLink ID="hlfeedback1" runat="server" CssClass="style18" 
+                                    ForeColor="White" NavigateUrl="~/User/feedback.aspx">Feedback</asp:HyperLink>
+                                <br />
+                                <br />
+                                <asp:HyperLink ID="hlcontact1" runat="server" CssClass="style18" 
+                                    NavigateUrl="~/User/contactus.aspx" style="color: #FFFFFF">Contact</asp:HyperLink>
+                                <br />
+                                <br />
+                                <asp:HyperLink ID="hlsitemap1" runat="server" CssClass="style18" 
+                                    NavigateUrl="~/User/sitemap.aspx" style="color: #FFFFFF">Sitemap</asp:HyperLink>
+                                <br />
+                                <br />
+                                <asp:HyperLink ID="hllogin1" runat="server" CssClass="style18" 
+                                    NavigateUrl="~/User/login.aspx" style="color: #FFFFFF">Login</asp:HyperLink>
+                                <br />
+                                </span></strong>
+                            </td>
+                            <td class="style6">
+                                <span class="style10"><span class="style13"><strong>
+                                <br />
+                                <br />
+                                Contact Us<br />
+                                </strong></span>
+                                <br />
+                                </span>
+                                <asp:Image ID="Image19" runat="server" Height="16px" 
+                                    ImageUrl="~/Images/Location1.jpg" Width="20px" />
+                                <span class="style11"><span class="style21">12/345 Kumar&#39;s Villa, New Ganesh&nbsp; 
+                                Nagar, Sangli 416416<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 123456789</span><span class="style9"><span class="style10"><br />
+                                <br />
+                                &nbsp;<asp:Image ID="Image20" runat="server" Height="16px" 
+                                    ImageUrl="~/Images/Mail (2).jpg" Width="20px" />
+                                &nbsp;</span><span class="style3">xyz@gmail.com</span></span></span><span 
+                                    class="style10"><span class="style11"><br />
+                                </span>
+                                <br />
+                                </span><strong>
+                                <br />
+                                <br />
+                                </strong>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3" style="background-color: #CC0000">
+                   <marquee width="100%" scrollamount="5" 
+                        style="color: #FFFFFF; font-weight: 700; font-size: small">Project By:Shubham Patil</marquee>
+                   
+                   </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

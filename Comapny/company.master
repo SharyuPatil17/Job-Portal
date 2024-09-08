@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="company.master.cs" Inherits="Comapny_company" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .style2
+        {
+            text-align: left;
+        }
+        .style3
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1" cellpadding="0" cellspacing="0" 
+            style="border-style: solid; border-width: thin">
+            <tr>
+                <td class="style2">
+                    <asp:Image ID="Image11" runat="server" Height="54px" 
+                        ImageUrl="~/Images/joblogo3.png" style="margin-left: 0px" Width="83px" />
+                </td>
+                <td style="font-size: xx-large; color: #CC0000">
+                    <div class="style3">
+                    <strong style="font-family: Verdana; text-align: center;">Opportunities to You </strong>
+                    </div>
+                    <table class="style1">
+                        <tr>
+                            <td style="font-size: large; color: #006666;" class="style3">
+&nbsp;Welcome:&nbsp;&nbsp; <asp:Label ID="Label1" runat="server" Text="Label" 
+                                    style="font-weight: 700; text-decoration: underline;"></asp:Label>
+                            </td>
+                        </tr>
+                        </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+    <asp:Menu ID="menucompany" runat="server" BackColor="#FFFBD6" 
+        DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+        ForeColor="White" Height="31px" onmenuitemclick="menucompany_MenuItemClick" 
+        Orientation="Horizontal" RenderingMode="Table" StaticSubMenuIndent="10px" 
+        
+            style="font-weight: 700; font-size: large; color: #000000; text-decoration: underline; font-family: Verdana; text-align: center; background-color: #009900;" 
+            Width="100%">
+        <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <DynamicMenuStyle BackColor="#FFFBD6" />
+        <DynamicSelectedStyle BackColor="#FFCC66" />
+        <Items>
+            <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Comapny/home.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Profile" Value="Profile" 
+                NavigateUrl="~/Comapny/profile.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Add Jobs" Value="Add Jobs" 
+                NavigateUrl="~/Comapny/addjobs.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="View Applications" Value="View Applications" 
+                NavigateUrl="~/Comapny/viewapplications.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Send Notifications" Value="Notifications" 
+                NavigateUrl="~/Comapny/notifications.aspx"></asp:MenuItem>
+            <asp:MenuItem NavigateUrl="~/Comapny/outbox.aspx" Text="Outbox" Value="Outbox">
+            </asp:MenuItem>
+            <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/User/home.aspx"></asp:MenuItem>
+        </Items>
+        <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+        <StaticSelectedStyle BackColor="#FFCC66" />
+    </asp:Menu>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td></tr>
+                <tr>
+                <td colspan="2">
+                 <marquee width="100%" behavior="alternate" 
+                          
+            style="font-family: Arial, Helvetica, sans-serif; font-weight: 700; height: 23px; font-size: medium; color: #FFFFFF; background-color: #009900">Project By:Shubham Patil
+                      </marquee>
+            </td></tr>
+        </table>
+      
+       
+    </div>
+    </form>
+</body>
+</html>
